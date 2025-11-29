@@ -1,0 +1,95 @@
+/* Fondo general */
+body {
+  margin: 0;
+  background: #050505;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Zona de partículas */
+#particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 0, 150, 0.2), transparent 70%),
+              radial-gradient(circle at 30% 50%, rgba(0, 150, 255, 0.15), transparent 70%),
+              radial-gradient(circle at 70% 80%, rgba(255, 255, 0, 0.15), transparent 70%);
+  background-size: cover;
+  animation: fadeGlow 6s infinite alternate;
+}
+
+@keyframes fadeGlow {
+  0% { filter: brightness(0.8); }
+  100% { filter: brightness(1.2); }
+}
+
+/* Contenedor del formulario */
+.auth-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caja del formulario */
+.auth-box {
+  width: 350px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(10, 10, 10, 0.8);
+  box-shadow: 0 0 20px rgba(255, 200, 50, 0.4);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* Títulos */
+h2 {
+  color: #FFD34E;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+/* Botones */
+button {
+  width: 90%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #FFD34E;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #FFEA8A;
+}
+
+/* Cambiar de login a registro */
+.swap {
+  margin-top: 10px;
+  color: #999;
+}
+
+.swap span {
+  color: #FFD34E;
+  cursor: pointer;
+  font-weight: bold;
+}

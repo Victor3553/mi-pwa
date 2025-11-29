@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Acceso - Cryptas de Zandriun</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<div id="particles"></div>
+
+<div class="auth-container">
+  <div class="auth-box">
+
+    <div id="loginBox">
+      <h2 id="titulo">Iniciar Sesión</h2>
+      <input id="logUser" type="text" placeholder="Usuario">
+      <input id="logPass" type="password" placeholder="Contraseña">
+      <button onclick="login()">Entrar</button>
+      <p class="swap">¿No tienes cuenta? <span onclick="mostrarRegistro()">Regístrate aquí</span></p>
+    </div>
+
+    <div id="registroBox" style="display:none;">
+      <h2 id="titulo">Registrarse</h2>
+      <input id="regUser" type="text" placeholder="Usuario">
+      <input id="regEmail" type="email" placeholder="Correo">
+      <input id="regPass" type="password" placeholder="Contraseña">
+      <button onclick="registrar()">Registrar</button>
+      <p class="swap">¿Ya tienes cuenta? <span onclick="mostrarLogin()">Inicia sesión</span></p>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
